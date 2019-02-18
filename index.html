@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <!-- <input type="text" id="txtTest1"/> -->
+        <div type="text" id="txtTest" contenteditable="true" style="border:1px black solid; background: transparent; outline: 0;">I'm Editable. Edit me!</div>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="jquery.autotype.div.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function(){
+                $('#txtTest').on('keyup',function(e){
+                    console.log($('#txtTest').text());
+                });
+           });
+        </script>
+    </body>
+</html>
